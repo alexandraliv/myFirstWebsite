@@ -1,0 +1,143 @@
+body, head {
+    background-image: url("images/picture4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Overlock;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#navbar {
+    background-color: rgb(178, 155, 231);
+    width: 100%;
+    /* height: 100%; */
+    display: block;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    /* border-radius: 5px; */
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+
+.nav-link {
+    padding: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+a:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+a:active {
+    color: black;
+
+}
+
+.home, .about_me, .contact {
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.171);
+    max-width: 450px;
+    max-height: 300px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.home {
+    align-content: center;
+    margin-left: 70px;
+    margin-top: 120px;
+    visibility: hidden;
+    padding: 10px;
+}
+
+.home:target {
+    visibility: visible;
+}
+
+.name {
+    margin-top: 200px;
+    margin-left: 940px;
+    font-size: 50px;
+    border-style: none;
+    letter-spacing: 0.7rem;
+    position: absolute;
+
+} 
+
+.about_me {
+    align-content: center;
+    visibility: hidden;
+    margin-left: 70px;
+    margin-top: -96px;
+    padding: 10px;
+}
+
+.about_me:target {
+    visibility: visible;
+}
+
+.contact {
+    align-content: center;
+    visibility: hidden;
+    margin-left: 70px;
+    margin-top: -95px;
+    padding: 10px;
+}
+
+.contact:target {
+    visibility: visible;
+}
+
+footer {
+    background-color: rgba(242, 0, 255, 0);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+}
+
+button {
+    border-style: solid;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(
+        to right, 
+        hwb(296deg 56% 27%), 
+        hsl(300deg, 66%, 75%)
+        );
+    color: white;
+    transition: filter 8s;
+    text-decoration: none;
+}
+
+.button:hover {
+    filter: hue-rotate(-40deg);
+}
